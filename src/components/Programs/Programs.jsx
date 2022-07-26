@@ -4,7 +4,7 @@ import { programsData } from "../../data/programsData";
 import RightArrow from "../../assets/rightArrow.png";
 const Programs = () => {
   return (
-    <div className="programs" id="programs">
+    <div className="programs" id="Programs">
       {/* Header */}
       <div className="programs-header">
         <span className="stroke-text">Explore our</span>
@@ -13,8 +13,8 @@ const Programs = () => {
       </div>
       {/* Category */}
       <div className="programs-categories">
-        {programsData.map((program) => (
-          <div className="category">
+        {programsData.map((program, i) => (
+          <div className="category" key={i}>
             {program.image}
             <span>{program.heading}</span>
             <span>{program.details}</span>

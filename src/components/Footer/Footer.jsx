@@ -6,7 +6,7 @@ import LinkedIn from "../../assets/linkedin.png";
 import Logo from "../../assets/logo.png";
 const Footer = () => {
   return (
-    <div className="Footer-container">
+    <div className="Footer-container" id="Footer">
       <hr />
       <div className="footer">
         <div className="social-links">
@@ -18,6 +18,8 @@ const Footer = () => {
           <img src={Logo} alt="Logo" />
         </div>
       </div>
+      <div className="blur blur-f-1"></div>
+      <div className="blur blur-f-2"></div>
     </div>
   );
 };
